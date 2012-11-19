@@ -1,0 +1,3 @@
+auto: true
+markdonw: rdiscount
+pygments: true
