@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 如何对代码进行高亮
+title: how to hightlight code
 ---
 
 ## 折磨
