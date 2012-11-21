@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: post
 title: pages没有调试工作,好难
 ---
-
-# {{ page.title }}
 
 其实不是真的难啦,不过总会遇到这样那样的问题
 
@@ -14,7 +12,3 @@ title: pages没有调试工作,好难
 我本身又不想搭本地环境验证,这样不就失去了我使用github的pages**随心所欲**,**任何**地方都能**更新同步**的初衷了么?
 
 还是接着调试吧,也许等会儿知识有了,错误也就发现了.
-
----
-
-{{ page.date | date_to_string }}

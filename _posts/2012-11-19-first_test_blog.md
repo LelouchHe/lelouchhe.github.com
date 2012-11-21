@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: post
 title: Hello, World!
 ---
-
-# {{ page.title }}
 
 ## github
 
@@ -16,7 +14,3 @@ github的pages好cool,真正的技术公司不就该这样么?
         printf("hello world\n");
         return 0;
     }
-
----
-
-{{ page.date | date_to_string }}
