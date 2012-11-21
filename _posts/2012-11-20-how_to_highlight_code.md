@@ -15,9 +15,8 @@ pages从本质来说是替换模版,把定义好的东西替换成`{}`或者`{%%
 
 对于代码来说,替换之后其实就是在代码外围加了两个标签而已,比如
 
-
     int main()
-        {
+    {
         printf("hello world\n");
         return 0;
     }
@@ -33,7 +32,6 @@ pages从本质来说是替换模版,把定义好的东西替换成`{}`或者`{%%
     }
     </code>
     </pre>
-
 
 这些节点元素(即`node`)是可以通过js动态的添加属性的,比如在[prettify](https://code.google.com/p/google-code-prettify/)上面说的,需要在`pre`标签添加`prettyprint`的`class`属性才行,这样我们通过简单的js来实现
 
