@@ -3,6 +3,8 @@ layout: default
 title: Hello, World!
 ---
 
+# {{ page.title }}
+
 ## github
 
 github的pages好cool,真正的技术公司不就该这样么?

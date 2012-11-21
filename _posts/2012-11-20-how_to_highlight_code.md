@@ -3,6 +3,8 @@ layout: default
 title: 如何高亮代码
 ---
 
+# {{ page.title }}
+
 ## 折磨
 
 其实也算不上折磨啦,不过对于不了解html/css/js的人,想要一下子搞定还真麻烦.
