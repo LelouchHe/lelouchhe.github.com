@@ -39,7 +39,7 @@ pages从本质来说是替换模版,把定义好的东西替换成`{}`或者`{%%
     
 这样就把所有的`pre`标签添加了
 
-整个prettify需要提前加载进来,按照[readme](https://google-code-prettify.googlecode.com/svn/trunk/README.html)的说法,需要添加`onload`
+整个prettify需要提前加载进来,按照[readme](https://google-code-prettify.googlecode.com/svn/trunk/README.html)的说法,需要添加`onload`,如下
 
     var bodies = document.getElementsByTagName("body");
     bodies[0].setAttribute("onload", "prettyPrint()");
