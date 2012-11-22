@@ -6,6 +6,8 @@ a:hover, a:active {color:red;}
 .left {float: left;}
 .right {float: right;}
 
+h1 {margin: 0 auto;}
+
 .header {
     max-width: 70%;
     height: 30px;
