@@ -1,6 +1,7 @@
 ---
 layout: math
 title: 尝试使用MathJax
+category: science
 ---
 
 ## 使用的工具
