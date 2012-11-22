@@ -7,13 +7,13 @@ a:hover, a:active {color:red;}
 .right {float: right;}
 
 #header {
-    width: 90%;
+    width: 300px;
     margin: 0 auto;
 }
 #header .home {margin-top:30px;}
 #header .nav {margin-top:30px;}
 #content {
-    width: 80%;
+    width: 300px;
     margin: 0 auto;
     min-height: 400px;
     height: auto;
