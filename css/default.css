@@ -2,19 +2,19 @@ a {text-decoration: none;}
 a:link, a:visited {color: green;}
 a:hover, a:active {color:red;}
 
-.left {float: left}
-.right {float: right}
+.left, .right{display: inline;}
+.left {float: left;}
+.right {float: right;}
 
 #header {
-    width: 650px;
+    width: 90%;
     margin: 0 auto;
 }
 #header .home {margin-top:30px;}
 #header .nav {margin-top:30px;}
 #content {
-    width: 65px;
+    width: 80%;
     margin: 0 auto;
     min-height: 400px;
-    height: auto !important;
-    height: 400px
+    height: auto;
 }
