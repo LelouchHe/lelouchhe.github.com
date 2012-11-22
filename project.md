@@ -9,13 +9,9 @@ title: 我的开源
 
 欢迎大家来看看[我的github](http://github.com/LelouchHe)
 
-{% if site.categories.project.length == 0 %}
-我还没有什么项目值得拿来分享,呜呜呜,桑心了
-{% else%}
 {% for post in site.categories.project %}
 *   [{{ post.title }}]({{ post.url }})
     {{ post.description }}
 {% endfor %}
-{% endif %}
 
 {{ site.copyright }}

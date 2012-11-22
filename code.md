@@ -11,13 +11,9 @@ title: 源码研究
 * [lua](http://www.lua.org/manual/5.2/manual.html)
 * [unix v6 / xv6](http://pdos.csail.mit.edu/6.828/2012/xv6.html)
 
-{% if site.categories.code.length == 0 %}
-我还没有什么文章出来,我要加油啦
-{% else%}
 {% for post in site.categories.code %}
 *   [{{ post.title }}]({{ post.url }})
     {{ post.description }}
 {% endfor %}
-{% endif %}
 
 {{ site.copyright }}
