@@ -19,9 +19,11 @@ $$x = {-b \pm \sqrt{b ^ 2 - 4ac} \over 2a}.$$
 
     $$x = {-b \pm \sqrt{b ^ 2 - 4ac} \over 2a}.$$
 
-其次,一些\tex符号不能写到一起,否则就会解释成另外的东西,这个是和`markdown`的解释冲突,比如下面这个:
+其次,一些\LaTex符号不能写到一起,否则就会解释成另外的东西,这个是和`markdown`的解释冲突,比如下面这个:
 
 $$x = {-b \pm \sqrt{b^2 - 4ac} \over 2a}.$$
+
+处理这种冲突需要谨记,[MathJax](http://www.mathjax.org/)是在对应html文档生成好之后才处理公式的.
 
 再次,要行内显示数学公式,必须按照[MathJax](http://www.mathjax.org/)上面说的那样,因为行内公式默认没有开启
 
