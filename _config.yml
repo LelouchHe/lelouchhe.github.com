@@ -1,5 +1,5 @@
 auto: true
-permalink: /:category/:title
+permalink: /:title
 markdown: rdiscount
 
 author: <a href="/about.html">LelouchHe</a>
