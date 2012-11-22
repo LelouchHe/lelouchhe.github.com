@@ -12,13 +12,13 @@ h1 {
 }
 
 .header {
-    max-width: 300px;
+    max-width: 80%;
     margin: 0 auto;
 }
-.header .home {margin-top:30px;}
-.header .nav {margin-top:30px;}
+.header .home {margin-top:10px;}
+.header .nav {margin-top:10px;}
 .content {
-    max-width: 300px;
+    max-width: 70%;
     margin: 0 auto;
     min-height: 400px;
     height: auto;
