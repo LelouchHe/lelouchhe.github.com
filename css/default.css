@@ -11,13 +11,13 @@ h1 {
     top: 30px;
 }
 
-#header {
+.header {
     max-width: 300px;
     margin: 0 auto;
 }
-#header .home {margin-top:30px;}
-#header .nav {margin-top:30px;}
-#content {
+.header .home {margin-top:30px;}
+.header .nav {margin-top:30px;}
+.content {
     max-width: 300px;
     margin: 0 auto;
     min-height: 400px;
