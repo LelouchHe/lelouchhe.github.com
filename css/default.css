@@ -2,6 +2,13 @@ a {text-decoration: none;}
 a:link, a:visited {color: green;}
 a:hover, a:active {color:red;}
 
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #000;
+}
+
 .left {float: left}
 .right {float: right}
 
