@@ -6,15 +6,10 @@ a:hover, a:active {color:red;}
 .left {float: left;}
 .right {float: right;}
 
-h1 {
-    position: relative;
-    top: 25px;
-}
-
 .header {
     max-width: 70%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    height: 60px
+    margin-bottom: 50px;
 }
 
 .content {
