@@ -11,7 +11,7 @@ title: 吐槽
 
 {% if site.categories.voice.length == 0 %}
 不过好像还没有值得吐嘈的诶,真是神奇的一天.
-{% else%}
+{% else %}
 {% for post in site.categories.voice %}
 *   [{{ post.title }}]({{ post.url }})
     {{ post.description }}

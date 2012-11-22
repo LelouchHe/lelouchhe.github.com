@@ -23,9 +23,11 @@ title: 科学吧
 
 努力吧,少年
 
+{{ site.categories.science | size }}
+
 {% if site.categories.science | size == 0 %}
 还没有文章,难道仅仅是没有时间么?
-{% else%}
+{% else %}
 {% for post in site.categories.science %}
 *   [{{ post.title }}]({{ post.url }})
     {{ post.description }}
