@@ -3,8 +3,6 @@ layout: page
 title: MINE
 ---
 
-# {{ page.title }}
-
 关于我 {{ site.author }}
 
 最新文章
