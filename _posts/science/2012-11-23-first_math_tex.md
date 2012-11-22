@@ -19,7 +19,7 @@ $$x = {-b \pm \sqrt{b ^ 2 - 4ac} \over 2a}.$$
 
     $$x = {-b \pm \sqrt{b ^ 2 - 4ac} \over 2a}.$$
 
-其次,一些$\LaTex$符号不能写到一起,否则就会解释成另外的东西,这个是和`markdown`的解释冲突,比如下面这个:
+其次,一些$LaTex$符号不能写到一起,否则就会解释成另外的东西,这个是和`markdown`的解释冲突,比如下面这个:
 
 $$x = {-b \pm \sqrt{b^2 - 4ac} \over 2a}.$$
 
