@@ -17,3 +17,5 @@ title: 吐槽
     {{ post.description }}
 {% endfor %}
 {% endif %}
+
+{{ site.copyright }}
