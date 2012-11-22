@@ -1,5 +1,19 @@
 a {text-decoration: none;}
-
 a:link, a:visited {color: green;}
-
 a:hover, a:active {color:red;}
+
+.left {float: left}
+.right {float: right}
+
+#header {
+    width: 650px;
+    margin: 0 auto;
+}
+#header .home {margin-top:30px;}
+#header .nav {margin-top:30px;}
+#content {
+    width: 650px;
+    margin: 0 auto;
+    min-height: 400px;
+    height: auto;
+}

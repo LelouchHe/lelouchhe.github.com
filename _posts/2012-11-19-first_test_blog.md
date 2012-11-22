@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hello, World!
+category: voice
 ---
 
 ## github
