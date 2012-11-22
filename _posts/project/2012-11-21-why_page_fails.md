@@ -6,7 +6,7 @@ category: project
 
 ## 怎么就不显示
 
-昨天搞了很久的pages,一直想发一个[新博文](/how_to_highlight_code),但死活没有成功.
+昨天搞了很久的pages,一直想发一个[新博文](/project/how_to_highlight_code),但死活没有成功.
 
 pages在每次更新的时候总会发邮件来,但昨晚怎么都没有,而且旧的页面也没有更新.
 
