@@ -6,14 +6,19 @@ a:hover, a:active {color:red;}
 .left {float: left;}
 .right {float: right;}
 
+h1 {
+    position: relative;
+    top: 30px;
+}
+
 #header {
-    width: 300px;
+    max-width: 300px;
     margin: 0 auto;
 }
 #header .home {margin-top:30px;}
 #header .nav {margin-top:30px;}
 #content {
-    width: 300px;
+    max-width: 300px;
     margin: 0 auto;
     min-height: 400px;
     height: auto;
