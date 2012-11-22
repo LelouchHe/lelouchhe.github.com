@@ -8,15 +8,15 @@ a:hover, a:active {color:red;}
 
 h1 {
     position: relative;
-    top: 30px;
+    top: 25px;
 }
 
 .header {
-    max-width: 80%;
-    margin: 0 auto;
+    max-width: 70%;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
-.header .home {margin-top:10px;}
-.header .nav {margin-top:10px;}
+
 .content {
     max-width: 70%;
     margin: 0 auto;
