@@ -23,7 +23,7 @@ title: 科学吧
 
 努力吧,少年
 
-{{ assign len = site.categories.science | size }}
+{% assign len = site.categories.science | size %}
 
 {% if len == 0 %}
 还没有文章,难道仅仅是没有时间么?
