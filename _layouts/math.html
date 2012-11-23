@@ -1,15 +1,10 @@
 ---
-layout: page
+layout: post
 ---
 
-<p>{{ page.date | date_to_string }} by {{ site.author }}</p>
 {{ content }}
 
-<script type="text/javascript" src="/js/default.js"></script>
-
-<link type="text/css" href="/css/prettify.css" rel="stylesheet" />
-<script type="text/javascript" src="/js/prettify/prettify.js"></script>
-
+<!-- MathJax的配置必须在其js之前 -->
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
