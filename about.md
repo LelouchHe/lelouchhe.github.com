@@ -13,4 +13,4 @@ title: 关于我
 
 这里[Lelouch_He@weibo](http://weibo.com/lelouchhe)
 
-那里(不常去)[Lelouch_He@twitter](http://twitter.com/Lelouch_He
+那里(不常去)[Lelouch_He@twitter](http://twitter.com/Lelouch_He)
