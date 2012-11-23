@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 为什么pages的页面不显示
-category: project
+category: mine
 ---
 
 ## 怎么就不显示

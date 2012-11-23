@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如何高亮代码
-category: project
+category: mine
 ---
 
 ## 折磨
