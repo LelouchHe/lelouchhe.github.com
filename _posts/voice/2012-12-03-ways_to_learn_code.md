@@ -29,4 +29,5 @@ category: voice
 补充一点,在Linux下使用go实在太爽,不过高亮代码时注意一点,rtp的设置必须在syntax,filetype等之前,如果你的代码没有高亮之类的,请检查你的添加位置,如果还不行,就再检查/etc/vim/vimrc里的系统配置(我就在这里栽跟头)
 
 [csh]: http://coolshell.cn/ "酷壳"
+[about go]: http://golang.org/ "Let's Go!"
 [coolshell about go]: http://coolshell.cn/articles/8460.html "关于Go"
