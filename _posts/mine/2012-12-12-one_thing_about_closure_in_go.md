@@ -16,8 +16,7 @@ category: mine
     )
 
     func main() {
-        sl := make([]int, 100)
-        for i, _ := range sl {
+        for i := 0; i < 100; i++ {
             func() {
                 fmt.Println(i)
             }()
@@ -39,8 +38,7 @@ category: mine
     )
 
     func main() {
-        sl := make([]int, 100)
-        for i, _ := range sl {
+        for i := 0; i < 100; i++ {
             func(i int) {
                 fmt.Println(i)
             }(i)
@@ -62,8 +60,7 @@ category: mine
     )
 
     func main() {
-        sl := make([]int, 100)
-        for i, _ := range sl {
+        for i := 0; i < 100; i++ {
             go func(i int) {
                 fmt.Println(i)
             }(i)
@@ -85,8 +82,7 @@ category: mine
     )
 
     func main() {
-        sl := make([]int, 100)
-        for i, _ := range sl {
+        for i := 0; i < 100; i++ {
             go func() {
                 fmt.Println(i)
             }()
@@ -112,8 +108,7 @@ category: mine
     )
 
     func main() {
-        sl := make([]int, 100)
-        for i, _ := range sl {
+        for i := 0; i < 100; i++ {
             go func() {
                 fmt.Println(i)
             }()
@@ -134,3 +129,51 @@ category: mine
 
 ps: Go越来越好用了 ;)
 
+## 再补一个测试
+
+最后补一个从[DCCMX][dccmx]看来的例子,这个例子加深了对闭包的印象:
+
+    package main
+    import (
+        "fmt"
+        "time"
+    )
+
+    func main() {
+        var fn [100]func()
+        for i := 0; i < 100; i++ {
+            fn[i] = func() {
+                fmt.Println(i)
+            }
+        }
+
+        for i := 0; i < 100; i++ {
+            fn[i]()
+        }
+    }
+
+请大家自己看看这个输出什么,并且和下面这个对比对比
+
+    package main
+    import (
+        "fmt"
+        "time"
+    )
+
+    func main() {
+        var fn [100]func()
+        var i int
+        for i = 0; i < 100; i++ {
+            fn[i] = func() {
+                fmt.Println(i)
+            }
+        }
+
+        for i = 0; i < 100; i++ {
+            fn[i]()
+        }
+    }
+
+说实话,闭包有趣,但是坑也很多的.
+
+[dccmx]: http://blog.dccmx.com/2011/08/variable-in-clousre/ "再谈闭包"
