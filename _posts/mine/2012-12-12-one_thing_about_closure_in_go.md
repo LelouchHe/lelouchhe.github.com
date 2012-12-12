@@ -41,9 +41,9 @@ category: mine
     func main() {
         sl := make([]int, 100)
         for i, _ := range sl {
-            func() {
+            func(i int) {
                 fmt.Println(i)
-            }()
+            }(i)
         }
         time.Sleep(1e9)
     }
@@ -64,9 +64,9 @@ category: mine
     func main() {
         sl := make([]int, 100)
         for i, _ := range sl {
-            func() {
+            go func(i int) {
                 fmt.Println(i)
-            }()
+            }(i)
         }
         time.Sleep(1e9)
     }
@@ -87,14 +87,14 @@ category: mine
     func main() {
         sl := make([]int, 100)
         for i, _ := range sl {
-            func() {
+            go func() {
                 fmt.Println(i)
             }()
         }
         time.Sleep(1e9)
     }
 
-## 分析5
+## 分析4
 
 这个又回到了1的闭包结构,结果却迥然不同,输出的全是99.
 
@@ -133,11 +133,4 @@ category: mine
 闭包可以减少参数的传递,使得函数可以维持数据,但在有些情况下,注意环境的动态性,小心那些不经意的bug
 
 ps: Go越来越好用了 ;)
-
-
-
-
-
-
-
 
