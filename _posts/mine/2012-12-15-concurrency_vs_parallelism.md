@@ -6,7 +6,7 @@ category: mine
 
 ## 推荐阅读
 
-强烈推荐Rob Pike大牛的[slide][concurrency is not parallelism],这个[slide]解决了我很多的问题
+强烈推荐Rob Pike大牛的[slide][concurrency is not parallelism],这个slide解决了我很多的问题
 
 ## 我的理解
 
