@@ -2,6 +2,7 @@
 layout: post
 title: 并发和并行
 category: mine
+tag: design
 ---
 
 ## 推荐阅读

@@ -2,6 +2,7 @@
 layout: post
 title: 设计一套coroutine
 category: voice
+tag: idea
 ---
 
 ## 从Goroutine想到

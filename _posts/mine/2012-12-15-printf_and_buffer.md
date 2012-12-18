@@ -2,6 +2,7 @@
 layout: post
 title: printf的缓冲区
 category: mine
+tag: C
 ---
 
 ## 场景

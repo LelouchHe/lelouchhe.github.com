@@ -2,6 +2,7 @@
 layout: post
 title: Go中switch和select的区别
 category: mine
+tag: Go
 ---
 
 ## 相似点

@@ -2,6 +2,7 @@
 layout: post
 title: Go闭包的一个小点
 category: mine
+tag: Go
 ---
 
 分析下如下代码的输出:

@@ -2,6 +2,7 @@
 layout: post
 title: 类似php的动态语言太赞了
 category: voice
+tag: php
 ---
 
 ## 一件什么事

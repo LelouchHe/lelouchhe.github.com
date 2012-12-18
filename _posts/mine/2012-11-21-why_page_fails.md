@@ -2,6 +2,7 @@
 layout: post
 title: 为什么pages的页面不显示
 category: mine
+tag: page
 ---
 
 ## 怎么就不显示

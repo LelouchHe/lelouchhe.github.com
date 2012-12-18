@@ -2,6 +2,7 @@
 layout: post
 title: Hello, World!
 category: voice
+tag: test
 ---
 
 ## github

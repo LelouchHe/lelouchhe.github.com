@@ -2,6 +2,7 @@
 layout: post
 title: pages不支持调试,只支持试错
 category: voice
+tag: page
 ---
 
 其实不是真的难啦,不过总会遇到这样那样的问题

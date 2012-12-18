@@ -2,6 +2,7 @@
 layout: post
 title: Go中method和interface的区别
 category: mine
+tag: Go
 ---
 
 Go是一个非常不错的新语言,除了语法上面可能怪了点,结合了C的简练和高级的语言级原语,让编程,尤其是在网络环境多并发下的编程变得更加容易

@@ -2,6 +2,7 @@
 layout: post
 title: Go内存模型1
 category: mine
+tag: Go
 ---
 
 ## 例子
