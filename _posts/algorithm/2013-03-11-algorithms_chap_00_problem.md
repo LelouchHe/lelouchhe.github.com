@@ -50,3 +50,17 @@ a ^ 2 + b c & a b + b d \\\\
 a c + c d & b c + d ^ 2
 \end{bmatrix}
 $$
+
+可以看到,2x2矩阵乘法需要4次加法和8次乘法
+
+2. 看到了$\logn$的记号,大家肯定都知道是分治了,其实计算$x ^ n$本来也有很多重复计算
+
+$$
+X ^ n = 
+\left\{
+\begin{aligned}
+{X ^ {n / 2}} ^ 2 & if n = 2 k \\\\
+{X ^ {(n - 1) / 2}} ^ 2 \cdot X & if n = 2 k + 1
+\end{aligned}
+\right
+$$
