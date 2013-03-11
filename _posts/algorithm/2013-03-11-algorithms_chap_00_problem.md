@@ -42,4 +42,11 @@ a & b \\\\
 c & d
 \end{matrix}
 \right]
+
+\left[
+\begin{matrix}
+a & b \\\\
+c & d
+\end{matrix}
+\right]
 $$
