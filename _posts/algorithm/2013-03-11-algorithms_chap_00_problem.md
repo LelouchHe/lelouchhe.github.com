@@ -37,7 +37,7 @@ $$c \neq 1 时, S = \frac{1 - c ^ n}{1 - c} $$
 
 $$
 \begin{matrix}
-a & b \\
+a & b \\\\
 c & d
 \end{matrix}
 $$
