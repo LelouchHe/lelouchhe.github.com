@@ -44,8 +44,7 @@ c & d
 \begin{bmatrix}
 a & b \\\\
 c & d
-\end{bmatrix}
-\equal
+\end{bmatrix} = 
 \begin{bmatrix}
 a ^ 2 + b c & a b + b d \\\\
 a c + c d & b c + d ^ 2
