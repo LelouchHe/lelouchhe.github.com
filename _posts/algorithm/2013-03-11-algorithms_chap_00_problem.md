@@ -36,8 +36,8 @@ $$c \neq 1 时, S = \frac{1 - c ^ n}{1 - c} $$
 1. 写出算式即可证明
 
 $$
-\begin{pmatrix}
+\begin{matrix}
 a & b \\
 c & d
-\end{pmatrix}
+\end{matrix}
 $$
