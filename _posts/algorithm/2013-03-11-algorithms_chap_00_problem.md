@@ -63,5 +63,5 @@ X ^ n =
 {X ^ {n / 2}} ^ 2 & if n = 2 k \\\\
 {X ^ {(n - 1) / 2}} ^ 2 \cdot X & if n = 2 k + 1
 \end{aligned}
-\right
+\right.
 $$
