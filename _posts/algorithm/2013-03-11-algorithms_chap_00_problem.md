@@ -42,18 +42,4 @@ a & b \\\\
 c & d
 \end{matrix}
 \right]
-\dot
-\left[
-\begin{matrix}
-a & b \\\\
-c & d
-\end{matrix}
-\right]
-=
-\left[
-\begin{matrix}
-a ^ 2 + b c & a b + b d \\\\
-a c + c d & b c + d ^ 2
-\end{matrix}
-\right]
 $$
