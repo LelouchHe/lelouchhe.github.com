@@ -36,8 +36,24 @@ $$c \neq 1 时, S = \frac{1 - c ^ n}{1 - c} $$
 1. 写出算式即可证明
 
 $$
+\left[
 \begin{matrix}
 a & b \\\\
 c & d
 \end{matrix}
+\right]
+\dot
+\left[
+\begin{matrix}
+a & b \\\\
+c & d
+\end{matrix}
+\right]
+=
+\left[
+\begin{matrix}
+a ^ 2 + b c & a b + b d \\\\
+a c + c d & b c + d ^ 2
+\end{matrix}
+\right]
 $$
