@@ -60,8 +60,8 @@ X ^ n =
 \left
 \\\{
 \begin{aligned}
-{X ^ {n / 2}} \cdot {X ^ {n / 2}} & if n = 2 k \\\\
-{X ^ {(n - 1) / 2}} \cdot {X ^ {(n - 1) / 2}} \cdot X & if n = 2 k + 1
+{X ^ {n / 2}} \cdot {X ^ {n / 2}} & n = 2 k \\\\
+{X ^ {(n - 1) / 2}} \cdot {X ^ {(n - 1) / 2}} \cdot X & n = 2 k + 1
 \end{aligned}
 \right.
 $$
