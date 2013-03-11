@@ -35,18 +35,14 @@ $$c \neq 1 时, S = \frac{1 - c ^ n}{1 - c} $$
 
 1. 写出算式即可证明
 
-$$
-\left[
-\begin{matrix}
+\[
+\begin{bmatrix}
 a & b \\\\
 c & d
-\end{matrix}
-\right]
+\end{bmatrix}
 
-\left[
-\begin{matrix}
+\begin{bmatrix}
 a & b \\\\
 c & d
-\end{matrix}
-\right]
-$$
+\end{bmatrix}
+\]
