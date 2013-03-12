@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MathJax小知识
-category: scienct
+category: science
 tag: mathjax
 ---
 
