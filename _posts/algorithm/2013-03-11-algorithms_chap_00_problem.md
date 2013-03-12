@@ -63,4 +63,47 @@ X ^ n =
 \right.
 $$
 
-3. 
+3. 假设某次运算结果为
+$
+\begin{bmatrix}
+a & b \\\\
+c & d
+\end{bmatrix}
+$
+乘以Fib矩阵
+$
+\begin{bmatrix}
+0 & 1 \\\\
+1 & 1
+\end{bmatrix}
+$,可得
+$$
+\begin{bmatrix}
+a & b \\\\
+c & d
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+0 & 1 \\\\
+1 & 1
+\end{bmatrix} = 
+\begin{bmatrix}
+b & a + b \\\\
+d & c + d
+\end{bmatrix}
+$$
+这个最多是原先矩阵的2倍(因为只有两个加法而已,其实应该远远不到),初始矩阵大小为$O(1)$,所以$n$次相乘后,大小最多为$O(2 ^ n)$,根据数字大小和位数的关系($N = O(\log n)$),可知,最多位数为$O(\log {2 ^ n}) = O(n)$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
