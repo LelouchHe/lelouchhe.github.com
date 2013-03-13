@@ -39,4 +39,8 @@ $$\log {n !} = \Omega (\log {(\frac{n}{2}) ^ \frac{n}{2}}) = \Omega (\frac{n}{2}
 
 ## 1.5
 
-
+$$
+H(n) & = 1 / 1 + 1 / 2 + 1 / 3 + 1 / 4 + \cdots = \sum _ {i = 1} ^ n 1 / i \\\\
+& \leq 1 / 1 + 1 / 2 + 1 / 2 + 1 / 4 + \cdots
+& O(\log n)
+$$
