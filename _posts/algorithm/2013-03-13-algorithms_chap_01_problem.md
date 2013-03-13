@@ -29,4 +29,11 @@ $$
 $$
 求解该方程,即可得到H(深度,为了避免和d冲突所以称为H)的结果$H \geq \log _ d {[(d - 1) n + 1]}$,即可得到结论
 
+## 1.4
+
+$$
+\log {n !} = O(\log {n ^ n}) = O(n \log n)
+\log {n !} = \Omega (\log {{n / 2} ^ {n / 2}}) = \Omega ((n / 2) \log {n / 2}) = \Omega (n \log n)
+$$
+
 
