@@ -70,4 +70,7 @@ libjson是我使用过最快最爽的json解析库了.当然,用c++写的,使用
 
 哈哈,我居然也修改了开源库,恩,想想很有趣
 
+在这里推荐一个json库--[Jansson][jansson],如果你只能在C下开发的话,Jansson应该是不二之选
+
 [utf8]: http://zh.wikipedia.org/zh-cn/UTF-8 "utf-8编码"
+[jansson]: http://www.digip.org/jansson/ "Jansson"
