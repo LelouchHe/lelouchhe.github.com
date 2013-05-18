@@ -194,20 +194,7 @@ v6的中断向量如下(507开始)
         mov (sp)+, r0       / 恢复r0
         rtt                 / 返回
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### 真正的trap处理函数
 
 
 [pdp-11/40 manual]: http://pdos.csail.mit.edu/6.828/2005/pdp11/index.html
