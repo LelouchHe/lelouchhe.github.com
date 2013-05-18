@@ -1,6 +1,7 @@
 auto: true
 permalink: /:title
 markdown: rdiscount
+baseurl: lelouchhe.github.io/
 
 author: <a href="/about.html">LelouchHe</a>
 copyright: By <a href="/about.html">LelouchHe</a> &copy; Copyright 2012
