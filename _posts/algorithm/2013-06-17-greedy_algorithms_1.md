@@ -70,6 +70,8 @@ tag: greedy
 
 这么说可能有些抽象,我们来看图解释.假设G(Greedy)是我们通过贪心的得到的解G_i是其中第i个任务,B(Best)是一个我们不知道的真正的全局解,B_i是其中第i个任务.我们通过以下归纳方法证明:
 
+![stay ahead][stay ahead]
+
 1. f(G_0) <= f(B_0),这个是显而易见的,因为G本来最先挑选的就是最早结束的任务,所以G_0肯定比B_0结束的早
 2. 假设这种关系在第i个任务时也成立,即f(G_i) <= f(B_i),我们需要证明f(G_j) <= f(B_j),其中j = i + 1.由于f(G_i) <= f(B_i),可得f(G_i) <= f(B_i) <= S(B_j),所以G_i和B_j是不重叠的,这样,我们假设f(G_j) > f(B_j),那么目前的贪心算法肯定会选择B_j,而不是G_j的(因为我们选择的是不重叠的最早结束的任务),矛盾,所以得证
 3. 所以,可以看到,G和B可以一一对应起来,而且一直f(G_i) <= f(B_i),这样,G的最后一个任务一直比B早,这样可以保证G的数量至少同B一样多(如果G结束之后还有空余,则G的数量比B多)
@@ -93,3 +95,4 @@ stay ahead的基本操作就是这样的,起始于一个合理的初始情况(i 
 
 [chinese book]: /chinese_books_and_kindle_only
 [algorithms design]: http://book.douban.com/subject/1475870
+[stay ahead]: /image/gready_stay_ahead.png "stay ahead示意图"
