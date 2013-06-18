@@ -95,4 +95,4 @@ stay ahead的基本操作就是这样的,起始于一个合理的初始情况(i 
 
 [chinese book]: /chinese_books_and_kindle_only
 [algorithms design]: http://book.douban.com/subject/1475870
-[stay ahead]: /image/gready_stay_ahead.png "stay ahead示意图"
+[stay ahead]: /image/greedy_stay_ahead.png "stay ahead示意图"
