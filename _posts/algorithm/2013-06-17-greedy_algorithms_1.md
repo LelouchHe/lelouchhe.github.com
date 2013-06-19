@@ -84,15 +84,51 @@ stay ahead的基本操作就是这样的,起始于一个合理的初始情况(i 
 
 ## 代码
 
-(待续)
+    struct task_t
+    {
+        int s;
+        int f;
+    };
 
+    int task_cmp(const void *a, const void *b)
+    {
+        const struct task_t *t_a = (const struct task_t *)a;
+        const struct task_t *t_b = (const struct task_t *)b;
 
+        return t_a->f < t_b->f;
+    }
 
+    int interval_scheduling(struct task_t tasks[], int task_num)
+    {
+        qsort(tasks, task_num, sizeof (struct task_t), task_cmp);
 
+        int num = 0;
+        int i = 0;
+        while (i < task_num)
+        {
+            num++;
+            j = i + 1;
+            while (j < task_num)
+            {
+                if (tasks[i].f <= tasks[j].s)
+                {
+                    break;
+                }
+                j++;
+            }
+            i = j;
+        }
 
+        return num;
+    }
 
+## 总结
 
+其实所有的贪心问题,都应该有一个底层的理论相通处,比如虽然我们可以使用"stay ahead"和反证法来证明贪心的正确性,但是这并没有告诉我们为什么.证明是事后诸葛亮,但并不能告诉我们事前是什么样子的.
+
+不过可惜的是,目前我还没有找到贪心问题的底层结构,[算法导论][CLRS]上好像有类似的阐述,我还没有看明白,希望在贪心的最后一个系列可以完成这样的解释
 
 [chinese book]: /chinese_books_and_kindle_only
 [algorithms design]: http://book.douban.com/subject/1475870
 [stay ahead]: /image/greedy_stay_ahead.png "stay ahead示意图"
+[CLRS]: http://book.douban.com/subject/1885170/
