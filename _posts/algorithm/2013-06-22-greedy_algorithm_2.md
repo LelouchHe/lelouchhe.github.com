@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 贪婪算法2
+title: 贪心算法2
 category: algorithm
 tag: greedy
 ---
