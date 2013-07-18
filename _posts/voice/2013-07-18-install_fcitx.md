@@ -21,17 +21,17 @@ tag: input
 
 零碎的步骤参见[本文][install]
 
-1. 卸载ibus,不过需要注意的是,必须完全清楚ibus才可以(否则会有冲突),请从软件管理中心把所有带有ibus的全部删除吧
+卸载ibus
 
     sudo apt-get remove ibus
 
-2. 添加fcitx源.ubuntu自带源有点问题,最好使用nightly build版本的
+添加fcitx源.ubuntu自带源有点问题,最好使用nightly build版本的
 
     sudo add-apt-repository ppa:fcitx-team/nightly
 
     sudo apt-get update
 
-3. 然后就是安装了,可以全装,或者选择的
+然后就是安装了,可以全装,或者选择的
 
     sudo apt-get install fcitx fcitx-config-gtk
 
@@ -43,7 +43,7 @@ tag: input
 
     sudo apt-get install fcitx-table-all
 
-4.  设置默认输入法
+设置默认输入法
 
     im-switch -s fcitx -z default
 
