@@ -28,19 +28,14 @@ tag: input
 添加fcitx源.ubuntu自带源有点问题,最好使用nightly build版本的
 
     sudo add-apt-repository ppa:fcitx-team/nightly
-
     sudo apt-get update
 
 然后就是安装了,可以全装,或者选择的
 
     sudo apt-get install fcitx fcitx-config-gtk
-
     sudo apt-get install fcitx-sunpinyin
-
     sudo apt-get install fcitx-googlepinyin
-
     sudo apt-get install fcitx-module-cloudpinyin  fcitx-sogoupinyin
-
     sudo apt-get install fcitx-table-all
 
 设置默认输入法
