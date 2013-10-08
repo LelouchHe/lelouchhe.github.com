@@ -15,7 +15,7 @@ tag: tip
     {
         char str[] = "209772416700";
         unsigned long uid = strtoul(str, NULL, 10);
-        printf("%lu\t%u\n",uid, sizeof(uid));
+        printf("%lu\t%lu\n", uid, sizeof(uid));
         return 0;
     }
 
@@ -28,6 +28,11 @@ tag: tip
 仔细查看一番,发现文件并没有包含strtoul的头文件stdlib.h,但程序还可以正常编译,看来又是##自带函数##惹得祸.当我加上这个头文件后,一切正常了.
 
 以前也有类似的经历,gcc自带的一些函数实现,可能由于某些原因幷不完善,所以出现了上面的问题.
+
+其实人家gcc有这个warning,只不过编译時偷懒没有打开而已
+
+    1.c: In function ‘main’:
+    1.c:6: warning: implicit declaration of function ‘strtoul’
 
 ## 多看一眼
 
