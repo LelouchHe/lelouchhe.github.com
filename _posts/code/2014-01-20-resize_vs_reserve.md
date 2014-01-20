@@ -26,9 +26,11 @@ resize和reserve长的很像,但功能差距很大
 
 * vec.reserve(size)只是预留size的空间,但这些空间在真正写之前,都是不能访问的.比如下面的例子,虽然不是每次都会sf,但在严格的条件下(如leetcode),也确实sf没错
     
+
     vector<int> vec;
     vec.reserve(10);
     vec[0] = 1; // sf
+
 
 * vec.resize(size)这个才是真正分配size的使用空间,我们可以随意的在size范围之内读写,都没有问题.上面那个例子,换成resize就万事大吉了
 
