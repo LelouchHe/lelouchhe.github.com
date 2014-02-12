@@ -5,6 +5,24 @@ category: code
 tags: json hack
 ---
 
+## 更新
+
+貌似很多人反映说这段修复无法直接使用
+
+很惭愧的说,确实如此.我的本意是把bug的位置指名,把修复bug的方法也描述出来,然后让各位读者自己來修改的
+
+不过既然大家想直接使用,那么我就提供一下具体的patch吧
+
+[patch][patch]
+
+patch适用于libjson 7.6.1
+
+将patch下载到libjson的根目录下,然后
+
+    patch -p1 < libjson.patch
+
+即可
+
 ## libjson的苦恼
 
 libjson是我使用过最快最爽的json解析库了.当然,用c++写的,使用起来肯定不如php之类的方便,但在速度上绝对更胜一筹.当年写的服务解析json耗时甚多(用的是jsoncpp),然后换了一下libjson,立马就达标了,解析时间从原先的50ms下降到不到1ms,真是厉害
@@ -74,3 +92,4 @@ libjson是我使用过最快最爽的json解析库了.当然,用c++写的,使用
 
 [utf8]: http://zh.wikipedia.org/zh-cn/UTF-8 "utf-8编码"
 [jansson]: http://www.digip.org/jansson/ "Jansson"
+[patch]: https://gist.github.com/LelouchHe/8951627 "patch"
