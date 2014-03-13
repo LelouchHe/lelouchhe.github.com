@@ -13,7 +13,7 @@ title: 关于我
 
 [我的github](https://github.com/LelouchHe)
 
-[简历](http://www.linkedin.com/in/lelouchhe)
+[简历](http://cn.linkedin.com/in/lelouchhe/)
 
 这里[Lelouch_He@weibo](http://weibo.com/lelouchhe)
 
