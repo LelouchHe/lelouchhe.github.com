@@ -9,7 +9,11 @@ title: 关于我
 
 网页做的丑了点,因为不会美工设计啊~
 
-联系我的话,请关注我吧
+邮箱: LelouchHe at gmail.com
+
+[我的github](https://github.com/LelouchHe)
+
+[简历](http://www.linkedin.com/in/lelouchhe)
 
 这里[Lelouch_He@weibo](http://weibo.com/lelouchhe)
 
