@@ -90,4 +90,4 @@ C的类型体系是没有多少办法绕过去的,所以值语义的问题很难
 用C++来开发,如果对接口有洁癖(比如我),最后用C封装一下,不就两全其美了么?
 
 [mjson]: https://github.com/LelouchHe/mjson "mjson库"
-[skip_list库]: https://github.com/LelouchHe/skip_list "跳表库"
+[skip_list]: https://github.com/LelouchHe/skip_list "跳表库"
