@@ -441,7 +441,7 @@ E =
 1 & p \\\\
 1 + E & 1 - p
 \end{aligned}
-\right
+\right.
 = 1 p + (1 - p) (1 + E) \Rightarrow E = \frac{1}{p}
 $$
 
