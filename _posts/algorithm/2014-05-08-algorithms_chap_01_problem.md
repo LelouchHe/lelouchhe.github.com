@@ -438,10 +438,139 @@ E =
 \left
 \\\{
 \begin{aligned}
-1 & p \\\\
-1 + E & 1 - p
+1 & \, & 概率为p \\\\
+1 + E & \, & 概率为1 - p
 \end{aligned}
 \right.
 = 1 p + (1 - p) (1 + E) \Rightarrow E = \frac{1}{p}
 $$
+
+后者还是借用期望公式,只不过利用递归的方式简化了运算
+
+## 1.35
+
+又是质数,又是1,记住我们3个重要的1:
+
+* $a ^ x \equiv b \mod N \Rightarrow a ^ y \equiv b ^ {\lfloor y / x \rfloor} a ^ {y \mod x} \mod N$,$b = 1$时尤其有用,无前提条件
+* $x x ^ {-1} \equiv 1 \mod N$,前提是$gcd(x, N) = 1$,x和N互质
+* $x ^ {e d} \equiv 1 \mod p q$,前提是p和q是质数,$gcd(e, (p - 1) (q - 1)) = 1,e d \equiv 1 \mod (p - 1) (q - 1)$
+
+虽然不一定能用到,但是最好想到
+
+### a
+
+$$
+x ^ 2 \equiv 1 \mod p \Rightarrow (x + 1) (x - 1) \equiv 0 \mod p \Rightarrow x \equiv 1 \mod p 或 x \equiv -1 \equiv p - 1 \mod p
+$$
+
+### b
+
+因为p是质数,所以$\forall x \in [1, p), x x ^ {-1} \equiv 1 \mod p$,因为只有1和p-1是自身,其余的都不同,所以可以两两配对,得
+
+$$
+(p - 1) ! = 1 \times 2 \times 3 \cdots (p - 2) \times (p - 1) \equiv 1 (p - 1) \equiv -1 \mod p
+$$
+
+$ \mod p$是很强的分类准则,一下就限定了取值的范围
+
+### c
+
+还是反证法,不过要能从反证中推出矛盾,还是需要一定的琢磨和研究的
+
+假设N为合数时,依然有$(N - 1) ! \equiv -1 \mod N$,两边同乘-1,得$(-1) (N - 1) ! \equiv 1 \mod N$,所以看的出来$(N - 1) !$有逆元(-1),所以$(N - 1) !$和$N$互质.但N为合数,$(N - 1) !$中必然有$N$的因数,二者必然不互质,所以矛盾了
+
+ps:还是想说一句,推导的重点还是围绕3个1来展开,只能说,在我目前接触的最初等的这部分模运算中,3个1是重中之重
+
+### d
+
+从计算量上就能看出区别,费马小定理计算$a ^ (p - 1)$,a可以取的很小,但这个Wilson定理需要计算的是$(p - 1) !$,即使都要$ \mod p$,差距也是很大的
+
+## 1.36
+
+质数的性质其实我们知道的不多,总结下一般就这么几条:
+
+* 费马小定理 p是质数,则$\forall a \in [1, p), a ^ {p - 1} \equiv 1 \mod p$
+* 模数乘法原则 p和q互质,$p | a, q | b \Rightarrow p q | a b$
+* 除法原则 $a c \equiv b c \mod N$,且$gcd(c, N) = 1$,则$a \equiv b \mod N$
+
+(如果以后还有的话,需要继续补充)
+
+### a
+
+$$
+p \equiv 3 \mod 4 \Rightarrow p = 4 k + 3 \Rightarrow p + 1 = 4 (k + 1)
+$$
+
+问题得证
+
+### b
+
+$$
+(a ^ {(p + 1) / 4}) ^ 2 = a ^ {(p + 1) / 2} = a a ^ {(p - 1) / 2}
+$$
+
+如果要$a ^ {(p + 1) / 4}$是a的平方根,则$a ^ {(p - 1) / 2} \equiv 1 \mod p$
+
+从质数能得出哪些性质呢?$a ^ {p - 1} \equiv 1 \mod p$,所以$a ^ {(p - 1) / 2} \equiv 1 \mod p$或者$a ^ {(p - 1) / 2} \equiv -1 \mod p$
+
+如果是第一种情况,那么问题得证了
+
+假设是第二种情况,再加上$a \equiv x ^ 2 \mod p$,得到$(x ^ 2) ^ {(p - 1) / 2} = x ^ {p - 1} \equiv -1 \mod p$,与费马小定理$x ^ {p - 1} \equiv 1 \mod p$矛盾,所以这个情况不成立
+
+故结论成立
+
+## 1.37
+
+### a
+
+一个明显的规律是二者以$3 \times 5$为周期重复
+
+### b
+
+假设存在相同的2个数,有$a \equiv j \equiv b \mod p, a \equiv k \equiv b \mod q$,二者相减,得$a - b \equiv 0 \mod p, a - b \equiv 0 \mod q$,再根据模数乘法原则,得$a - b \equiv 0 \mod p q$,又因为$a - b \in (-p q, p q)$,所以只能为0,与假设矛盾了
+
+所以针对取模后的特定序列,只存在唯一的整数满足条件
+
+### c
+
+针对问题求解就好了,目前我们可以有以下的结论
+
+$x \mod a b \equiv x \mod a$
+
+可以把模运算变换成乘法运算即可,a和b任意
+
+### d
+
+推广看来,就是解如下的方程:
+
+设$p _ i$为质数
+
+$$
+\left
+\\\{
+\begin{aligned}
+x \equiv a _ 1 \mod p _ 1 \\\\
+x \equiv a _ 2 \mod p _ 2 \\\\
+\cdots \\\\
+x \equiv a _ n \mod p _ n
+\end{aligned}
+\right.
+$$
+
+设$M = \Pi p _ i, M _ i = M / p _ i, t _ i = M _ i ^ {-1} \mod p_i$,所以有如下性质:
+
+$$a _ i M _ i t _ i \equiv a _ i \mod p _ i$$
+
+$$a _ j M _ j t _ j \equiv 0 \mod p _ i$$
+
+这样,令$x = \Sigma a _ i M _ i t _ i$,这样就能满足上述的方程了
+
+现在的问题是,我们如何能找到这样答案呢?
+
+从问题a可以感觉到,序列是按照$p q$为周期重复的,所以一个可能的思路是求这些所有质数的最小公倍数(就是$M$),然后再想方法凑一下相等的情况,x中肯定需要有个$a _ i$,同时需要一个数,在$\mod p _ i$时为1,在$\mod p _ j$时为0,可以看到,$M \mod p _ i$都是0,我们从M中把$p _ i$取出即可(就是$M _ i$),然后顺理成章的想到$t _ i M _ i \equiv 1 \mod p _ i$(重要的3个1)
+
+当然,这个思路也不容易想到,如果没有事先了解,感觉可能一下子推导不出来的
+
+## 1.38
+
 
