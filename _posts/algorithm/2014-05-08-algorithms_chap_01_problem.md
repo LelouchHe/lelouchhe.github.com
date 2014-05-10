@@ -436,9 +436,9 @@ $$
 $$
 E =
 \left
-\{
+\\\{
 \begin{aligned}
-1 & p \\
+1 & p \\\\
 1 + E & 1 - p
 \end{aligned}
 \right
