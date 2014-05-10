@@ -396,4 +396,52 @@ ps:感觉solutions给出的答案有些问题,$N !$应该和N相关,如果单论
 
 ## 1.32
 
+### a
+
+可以采用经典的二分查找,复杂度是$O(\log N)$
+
+### b
+
+分情况讨论:
+
+* $N = 1$时,$q = 1$,成立
+* $N \ge 2$时,如果q存在的话,$q \ge 2$.原等式变换一下,$N = q ^ k \Rightarrow \log N = k \log q \Rightarrow k = \log N / \log q \le \log N$,成立
+
+所以原结论是成立的
+
+### c
+
+判断是否幂,即$N = q ^ k$,此时q和k都未知.但是根据b的结论,k是有范围的,$k \in [2, \log N]$,所以可以枚举k的值,来判断q是否存在.使用经典的二分查找,需要枚举$\log N$次,每次枚举中,二分查找q的值,需要$O(\log N)$,乘幂计算需要$O(\log k)$次,所以最后的复杂度为
+
+$$
+O(\Sigma _ {k = 2} ^ {\log N} \log N \log k) = O((\log N) ^ 2 \log (\log N))
+$$
+
+利用了1.4的结论$\log (n !) = \Theta (n \log n)$
+
+## 1.33
+
+根据$lcm(a, b) = \frac{a b}{gcd(a, b)}$,可知其复杂度为$O(n ^ 3)$
+
+## 1.34
+
+还记得期望的公式么?$E(x) = \Sigma i p(i)$,所以利用期望公式可以计算,即我们的提示1
+
+$$
+E = \Sigma i (1 - p) ^ {i - 1} p = \frac{1}{p}
+$$
+
+或者更加简单点,借用递归的说法
+
+$$
+E =
+\left
+\{
+\begin{aligned}
+1 & p \\
+1 + E & 1 - p
+\end{aligned}
+\right
+= 1 p + (1 - p) (1 + E) \Rightarrow E = \frac{1}{p}
+$$
 
