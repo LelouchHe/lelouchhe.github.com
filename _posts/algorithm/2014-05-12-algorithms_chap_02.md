@@ -114,7 +114,7 @@ $$
 \left
 \\\{
 \begin{aligned}
-T(n) = a T(n / b) + f(n) \\\\
+T(n) = a T(n / b) + \Theta (f(n)) \\\\
 T(0) = O(1)
 \end{aligned}
 \right.
