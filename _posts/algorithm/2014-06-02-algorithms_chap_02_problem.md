@@ -285,4 +285,32 @@ ppps:遇到间隔求和(类似本题的奇数项),一个常见的方法是将间
 
 预处理在分治算法中,也有很重要的用途.因为分解之后的子问题是原问题的一部分,所以必然由一些性质是共享的,当在分治求解时,发现一些信息在被重复使用/计算,就可以想想能否通过预处理,来优化这部分的时间.当然,最后可能就直接像优化3一样,脱离来分治的路子了,但我们是要解题,所以也是一个好的现象
 
+## 2.15
+
+quicksort/quickselect的分解关键,算法主要维护几个区间:
+
+* [0, small): 小于v
+* [small, equal): 等于v
+* [equal, big]: 未知
+* (big, n - 1]: 大于v
+
+    void partition(vector<int>& S, int v) {
+        int small = 0;
+        int equal = 0;
+        int big = S.size() - 1;
+        while (equal <= big) {
+            if (S[equal] < v) {
+                swap(S[small++], S[equal++]);
+            } else if (S[equal] == v) {
+                equal++;
+            } else {
+                swap(S[equal], S[big--]);
+            }
+        }
+    }
+
+## 2.16
+
+
+
 [jeff]: http://www.cs.illinois.edu/~jeffe/teaching/algorithms/ "jeff的笔记"
