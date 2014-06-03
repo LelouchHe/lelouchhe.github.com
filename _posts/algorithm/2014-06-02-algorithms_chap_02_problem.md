@@ -295,6 +295,8 @@ quicksort/quickselect的分解关键,算法主要维护几个区间:
 * (big, n - 1]: 大于v
 
 
+代码如下:
+
     void partition(vector<int>& S, int v) {
         int small = 0;
         int equal = 0;
