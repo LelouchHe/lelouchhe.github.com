@@ -29,4 +29,42 @@ tag: plan
 
 所以这个一年计划当中,读书一定要有笔记,一定要做习题(就算习题再简单,也要写写想想),勤思考,多想想变式
 
-要攻克的书应该都是经典
+要攻克的书应该都是经典,希望可以沉下心来好好研究,争取明年有个好的表现
+
+按照攻克的顺序,为:
+
+1. [Algorithms][algorithms]
+2. [Algorithm Design Manual][adm]
+3. [Algorithm Design][algorithm design]
+4. [Jeff Node][jeff]
+5. [Introduction to Algorithms: A Creative Approach][manber]
+6. [Introduction to Algorithms][clrs]
+
+前4本是希望能够写出笔记并做完所有的习题,后2本作为参考即可(都有中文版,方便查阅),如果时间允许的话,也一道搞定
+
+其实感觉算法书一本就足够了,关键在看看不同牛人的奇妙思路和题目,增长见识
+
+当然, 还有一本增长内功的书[Concrete Mathematics][math],不敢说能看完做完题,只能保证有时间的话,一定边看边写(其实以前看过开头了)
+
+还有一本主攻面试的书[Elements of Programming interviews][epi],争取的是年前可以过一遍所有题目
+
+## 做题
+
+这方面一直没有很好的选择,目前就集中在[leetcode][leetcode]和[USACO][usaco],等待技术提高之后(估计得到11月左右),就开始主攻[topcoder][topcoder],希望最后有所收获吧
+
+## 前进
+
+*如果我死了,就代表我不过是这种程度的男人而已*
+
+
+[algorithms]: http://book.douban.com/subject/1996256/
+[adm]: http://book.douban.com/subject/3072383/
+[algorithm design]: http://book.douban.com/subject/1475870/
+[jeff]: http://www.cs.uiuc.edu/~jeffe/teaching/algorithms/
+[manber]: http://book.douban.com/subject/1475815/
+[clrs]: http://book.douban.com/subject/3904676/
+[math]: http://book.douban.com/subject/1390010/
+[epi]: http://book.douban.com/subject/20962468/
+[leetcode]: http://oj.leetcode.com/problems/
+[usaco]: http://cerberus.delos.com:791/usacogate
+[topcoder]: http://www.topcoder.com/
