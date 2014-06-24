@@ -99,4 +99,3 @@ tag: algorithms
 [jeff]: http://www.cs.uiuc.edu/~jeffe/teaching/algorithms/
 [algorithms4]: http://book.douban.com/subject/10432347/
 [adm]: http://book.douban.com/subject/3072383/
-[word ladder]: https://oj.leetcode.com/problems/word-ladder/
