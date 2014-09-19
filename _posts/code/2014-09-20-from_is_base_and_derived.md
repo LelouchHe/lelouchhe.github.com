@@ -38,17 +38,17 @@ is_base_and_derived是boost提供的一个用于判断继承关系的工具类,�
 
 从最后的结果来看,如果`check(host(), 0)`调用的是B的版本,就返回false,调用的是D的版本,则返回true.
 
-host()返回一个临时的host对象,直接作为check的参数.check的第一个参数类型是const B *或const D *,而host提供了host到这些类型的自定义转换(那两个operator).那么此时,在不同关系下,编译器究竟是如何判断调用哪个函数的呢?
+host()返回一个临时的host对象,直接作为check的参数.check的第一个参数类型是`const B *`或`const D *`,而host提供了host到这些类型的自定义转换(那两个operator).那么此时,在不同关系下,编译器究竟是如何判断调用哪个函数的呢?
 
 ### class D : class B
 
 如果此时要调用B版本,我们要经过的类型转换(转换1)大致是:
 
-* host -> const host -> const B *: 转换成功
+* `host -> const host -> const B *`: 转换成功
 
 此时D是继承与B的,所以还有另一个版本的类型转换(转换2):
 
-* host -> const D * -> const B *: 转换成功
+* `host -> const D * -> const B *`: 转换成功
 
 这两个转换都是针对B版本调用的,初看感觉二者类似,但实际上,根据[C++标准][c++11],二者还是有优劣
 
