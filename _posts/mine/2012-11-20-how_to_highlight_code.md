@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如何高亮代码
-pategory: mine
+category: mine
 tag: page
 ---
 
