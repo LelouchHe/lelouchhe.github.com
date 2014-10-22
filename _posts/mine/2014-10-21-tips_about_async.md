@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: 关于异步的思考
-pategory: mine
+category: mine
 tag: async
 ---
 

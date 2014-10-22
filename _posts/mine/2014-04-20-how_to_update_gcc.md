@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如何升级gcc
-pategory: mine
+category: mine
 tag: gcc
 ---
 
