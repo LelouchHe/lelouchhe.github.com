@@ -1,0 +1,62 @@
+---
+layout: post
+title: 安装Rust
+category: mine
+tag: rust
+---
+
+[原文链接][from]
+
+使用Rust的第一步就是安装!安装Rust有很多种方法,但最简单的是使用`rustup`脚本.如果你使用的是Linux或Mac,你只需要输入以下命令(注意,你不需要输入`$`符号,这是命令行的标识符):
+
+    $ curl -L https://static.rust-lang.org/rustup.sh | sudo sh
+
+如果你对使用`curl | sudo sh`的安全性有所担心,请读下下面我们的声明.你也可以使用分开的2个步骤来进行安装,并且检查我们的安装脚本:
+
+    $ curl -L https://static.rust-lang.org/rustup.sh -O
+    $ sudo sh rustup.sh
+
+如果你使用Windows,请下载[32位安装程序][32bit for win]或[64位安装程序][64bit for win]进行安装.
+
+如果你决定不再使用Rust了,我们有些遗憾,但还好.没有一种编程语言适合所有人的.可以用以下参数调用安装脚本即可卸载:
+
+    $ curl -L https://static.rust-lang.org/rustup.sh | sudo sh -s -- --uninstall
+
+如果你使用Windows安装程序,重新运行该程序,此时会有卸载选项的.
+
+你想更新Rust时,就可以重新运行安装脚本,这个是你经常要做的.现在Rust还是pre-1.0,所以人们会假定你使用了最新的Rust.
+
+这让我想到一些事情:当我们建议使用`curl | sudo sh`时,有些人也许会非常不爽.他们确实应该感到不爽.通常来说,当你这样做时,你信任那些维护Rust的人不会破坏你的电脑做些不好的事情.这个想法是非常好的!但如果你对这样觉得非常不爽,可以看下[从源码构建Rust][building rust from source]或[官方二进制包][official binary].我们保证,这种通过安装脚本安装的方式不会一直持续下去:这仅仅是让人们持续得到最新Rust的最简单的方式而已.
+
+我们官方支持以下平台:
+
+* Windows (7, 8, Server 2008 R2)
+* Linux (2.6.18以上), x86和x86-64
+* OSX 10.7 (Lion) 以上, x86和x86-64
+
+我们在以上平台进行了大量的测试,还包括其他的一些,比如Android.但以上平台是最有保证的,因为他们进行了最多的测试.
+
+最后,关于Windows.Rust认为Windows是一个一流的平台,但老实来讲,Windows上的体验不如Linux/OSX.我们还在改进!如果有些东西无法正常运行,这是个bug.有的话请通知我们.每个变动都会在Windows和其他平台上一起测试的.
+
+如果已经安装了Rust,你可以打开shell,输入以下:
+
+    $ rustc --version
+
+你应该能看到类似的输出:
+
+    $ rustc 1.0.0-nightly (44a287e6e 2015-01-08 17:03:40 -0800)
+
+要是你的输出是类似的,说明Rust已经成功安装了!恭喜!
+
+如果没有的话,你可以在以下几个地方寻求帮助.最简单的是[rust irc][rust irc],你可以通过[Mibbit][mibbit]访问.点击这个链接,你就会同其他Rustaceans(我们的昵称)交流,我们就可以帮助你.你还可以去其他的一些地方,包括[我们的论坛][forum], [/r/rust subreddit][reddit]和[Stack Overflow][stack overflow]
+
+[from]: http://doc.rust-lang.org/book/installing-rust.html
+[32bit for win]: https://static.rust-lang.org/dist/rust-nightly-i686-pc-windows-gnu.exe
+[64bit for win]: https://static.rust-lang.org/dist/rust-nightly-x86_64-pc-windows-gnu.exe
+[building rust from source]: https://github.com/rust-lang/rust#building-from-source
+[official binary]: http://www.rust-lang.org/install.html
+[rust irc]: irc://irc.mozilla.org/#rust
+[mibbit]: http://chat.mibbit.com/?server=irc.mozilla.org&channel=%23rust
+[forum]: http://discuss.rust-lang.org
+[reddit]: http://www.reddit.com/r/rust
+[stack overflow]: http://stackoverflow.com/questions/tagged/rust
