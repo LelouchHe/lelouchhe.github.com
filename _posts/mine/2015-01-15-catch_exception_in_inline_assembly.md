@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
-title: what
+title: 嵌入汇编如何捕获异常
 category: mine
-tag: trap
+tag: c++
 ---
 
 ## 缘由
