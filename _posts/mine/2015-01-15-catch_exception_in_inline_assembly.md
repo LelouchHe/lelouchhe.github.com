@@ -2,7 +2,7 @@
 layout: post
 title: 嵌入汇编如何捕获异常
 category: mine
-tag: c++
+tag: trap
 ---
 
 ## 缘由
