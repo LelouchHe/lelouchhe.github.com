@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: 嵌入汇编如何捕获异常
+title: what
 category: mine
 tag: trap
 ---
