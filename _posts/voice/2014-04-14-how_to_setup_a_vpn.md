@@ -30,7 +30,7 @@ tag: vpn gfw
 需要的后台程序有pptpd和iptables,统统使用apt-get来安装
 
     # root或sudo
-    apt-get install pptp iptables
+    apt-get install pptpd iptables
 
 ## 配置pptp
 
