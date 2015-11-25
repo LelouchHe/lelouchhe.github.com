@@ -15,7 +15,7 @@ tag: shadowsocks gfw
 
 首先,你得有一个境外可连的vps服务器,这里推荐[linode][linode],这个是我的[ref][ref].
 
-再安装完ubuntu之后,我们需要安装'python-pip',从而安装shadowsocks
+再安装完ubuntu之后,我们需要安装`python-pip`,从而安装shadowsocks
 
     sudo apt-get install python-pip
     sudo pip install shadowsocks
@@ -24,7 +24,7 @@ tag: shadowsocks gfw
 
     sudo ssserver -p 443 -k password -m rc4-md5 --user nobody -d start
 
-'-p'是指定端口号,'-k'是密码(需要明文输入),'-m'是加密方式.这三个是需要客户端连接的凭证,一定要完全一致.加密的话,其实哪个都可以,最好选择一个比较强的,'rc4-md5'是最基本的了.
+**-p**是指定端口号,**-k**是密码(需要明文输入),**-m**是加密方式.这三个是需要客户端连接的凭证,一定要完全一致.加密的话,其实哪个都可以,最好选择一个比较强的,`rc4-md5`是最基本的了.
 
 ## 安装client
 
