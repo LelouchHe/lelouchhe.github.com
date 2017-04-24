@@ -1,6 +1,5 @@
 auto: true
 permalink: /:title
-markdown: rdiscount
 
 author: <a href="/about.html">LelouchHe</a>
 copyright: By <a href="/about.html">LelouchHe</a> &copy; Copyright 2014
