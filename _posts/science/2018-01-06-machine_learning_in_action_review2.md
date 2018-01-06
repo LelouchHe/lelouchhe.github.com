@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: math
 title: 机器学习实战2 - 决策树
 category: science
 tag: ml
@@ -45,7 +45,7 @@ $$
 E(D) = - \sum _ {i = 1} ^ {n} P(D _ i) * log _ 2 (P(D _ i))
 $$
 
-
+其中$P(D _ i)$表示$D _ i$在数据集D中的概率.可以看出,如果数据集D只有1个值,那么$E(D)$为0,表示一点都不混乱,如果数据集D中的每个值的数量都相同,此时$E(D)$
 
 
 
