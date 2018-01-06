@@ -7,6 +7,8 @@ tag: ml
 
 ## k最近邻(k-Nearest Neighbors)
 
+[chapter02][chapter02]
+
 k最近邻应该是一种较为简单的分类算法.俗语有云,近朱者赤,近墨者黑,表达的就是这个意思.它的基本假设是数据分类是聚集的,同一个分类下的数据大体上会聚在一起(这个思想和无监督里的聚类算法类似).在既有数据集中选择k个与目标最近的数据,他们的分类就是目标的分类,具体步骤如下:
 
 1. 计算目标与数据集中所有数据的距离
@@ -51,5 +53,6 @@ k的选择也是需要考量的,太小的值会带来太多的随机性(想象k=
 
 不过本人并没有比较过二者的优缺点,在我看来,应该是大体类似,圆覆盖效果可能会略略好一点点
 
+[chapter02]: https://github.com/LelouchHe/machine_learning_in_action_code/tree/master/chapter02
 [distance]: http://www.cnblogs.com/heaad/archive/2011/03/08/1977733.html
 [mitchell]: https://book.douban.com/subject/1102235/

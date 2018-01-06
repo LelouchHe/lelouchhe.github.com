@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 机器学习实战 review 0
+title: 机器学习实战0
 category: science
 tag: ml
 ---
