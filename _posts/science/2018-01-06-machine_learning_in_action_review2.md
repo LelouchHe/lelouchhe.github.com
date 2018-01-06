@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 机器学习实战1 - 决策树
+title: 机器学习实战2 - 决策树
 category: science
 tag: ml
 ---
