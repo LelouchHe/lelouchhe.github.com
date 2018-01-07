@@ -24,14 +24,14 @@ $$
 回到机器学习的角度上来说,在既有数据集(D)和所有可能假设(H)的情况下,我们试图得到一个最为可能的假设(h),这可以看作是在求:
 
 $$
-h = argmax _ {h \in H} P(h | D)
+h \equiv argmax _ {h \in H} P(h | D)
 $$
 
 抽象的来说,任何学习其实都是在求解这个h.但这个值的求解是比较困难的(单机器学习就汗牛充栋了,不要提其他方法了),所以利用贝叶斯法则,我们做一下转换:
 
 $$
 
-h = argmax _ {h \in H} P(h | D)
+h \equiv argmax _ {h \in H} P(h | D)
   = argmax _ {h \in H} \frac{P(D | h)P(h)}{P(D)}
   = argmax _ {h \in H} P(D | h)P(h)
 
@@ -48,13 +48,13 @@ $P(D)$对于既有数据集来说,是常量,可以忽略.
 这样,我们通过2个比较容易获得的量$P(h)$与$P(D \| h)$,来求比较困难的$h _ {MAP}$:
 
 $$
-h _ {MAP} = argmax _ {h \in H} P(D | h)P(h)
+h _ {MAP} \equiv argmax _ {h \in H} P(D | h)P(h)
 $$
 
 当我们对h没有任何背景知识时,可以继续简化为:
 
 $$
-h _ {ML} = argmax _ {h \in H} P(D | h)
+h _ {ML} \equiv argmax _ {h \in H} P(D | h)
 $$
 
 
