@@ -57,6 +57,38 @@ $$
 h _ {ML} \equiv argmax _ {h \in H} P(D | h)
 $$
 
+此处的ML意为**Maximum Likelihood**,$h _ {ML}$也成为**极大似然**假设
+
+## 贝叶斯法则的应用
+
+从上面可以看到,贝叶斯法则其实是一个通用的基础规则,通过求解$h _ {MAP}$或者$h _ {ML}$,我们可以得到一个在既有数据集(D)和所有可能假设(H)的前提下,最为可能的假设(h).
+
+这就提供了一种理解其他很多学习算法的角度.在处理其他学习算法时,一个比较隐晦或棘手的问题就是如何证明算法的正确性.当然,对于我等工程师来说,这并不是一个非常要命的问题,通常我们都会以常识的方式理解一下分析过程就结束了.但从某种数学角度上给予证明,对于研究者进行研究或者我们进一步理解,还是非常有帮助的.而贝叶斯法则提供了一种可能的框架结构,即使原学习算法是概率无关的,通常也能通过变换,来证明原算法的归纳偏置在贝叶斯法则下是可以导向$h _ {MAP}$或$h _ {ML}$的.
+
+下面我们以ID3的决策树为例,看看如何使用贝叶斯法则.更多的其他分析,见[机器学习][mitchell]的第六章.
+
+### ID3的决策树
+
+对贝叶斯法则进行一系列的变换:
+
+$$
+h _ {MAP} = argmax _ {h \in H} P(D | h)P(h)
+          = argmax _ {h \in H} { \log _ {2} P(D | h) + \log _　{2} P(h) }
+          = argmin _ {h \in H} {- \log _ {2} P(D | h) - \log _ {2} P(h) }
+$$
+
+最后一个等式,很明显,已经和ID3使用的信息熵类似了.信息论中$- \log _ {2} A$表示的其实就是使用某种编码,得以编码$A$的最小位数.如果我们假设$L _ {C}(A)$用来表示编码C下A的最小编码长度,也即$L _ {C}(A) = - \log _ {2} (A)$的话,原公式可以表达为:
+
+$$
+h _ {MAP} = argmin _ {h \in H} { L _ {C} (D | h) + L _ {C} (h)}
+$$
+
+可以看到,其实要求的就是使得编码最小的假设h.在决策树算法中,编码多少是通过树的高度来体现的(编码的值是通过树的分支来体现的,参考[霍夫曼树][huffman]),因此也就是相当于求最矮的决策树了.这就和ID3的归纳偏置,不谋而合,从这个角度证明了ID3的正确性.这个原则,被称为**最小描述长度(Minimum Description Length, MDL)**,亦即:
+
+$$
+h _ {MDL} = argmin _ {h \in H} { L _ {C} (D | h) + L _ {C} (h)}
+$$
+
 
 
 
@@ -76,3 +108,5 @@ $$
 [chapter04]: https://github.com/LelouchHe/machine_learning_in_action_code/tree/master/chapter04
 [bayes]: https://en.wikipedia.org/wiki/Bayes%27_theorem
 [cond]: https://en.wikipedia.org/wiki/Conditional_probability
+[mitchell]: https://book.douban.com/subject/1102235/
+[huffman]: https://en.wikipedia.org/wiki/Huffman_coding

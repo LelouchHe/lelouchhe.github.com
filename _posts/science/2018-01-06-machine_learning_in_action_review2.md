@@ -128,5 +128,6 @@ $$
 
 [chapter03]: https://github.com/LelouchHe/machine_learning_in_action_code/tree/master/chapter03
 [chapter09]: https://github.com/LelouchHe/machine_learning_in_action_code/tree/master/chapter09
+[mitchell]: https://book.douban.com/subject/1102235/
 [rectangle]: https://www.zhihu.com/question/264893261/answer/286954136
 [plot]: https://www.bilibili.com/video/av9912938/?from=search&seid=5113779167271072021#page=62
